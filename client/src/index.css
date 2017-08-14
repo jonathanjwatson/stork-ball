@@ -62,4 +62,46 @@ position: absolute;
     .splash-image h3{
       font-size:2em;
     }
+  .splash-image{
+    height:50vh;
+  }
+}
+.pod-two-splash-image{
+  background: url('./images/PodTwo.png');
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  font-size: 1rem;
+  color: white;
+  font-family: 'Crimson Text';
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  padding-top:3em;
+}
+.text-area{
+  margin:2em;
+}
+
+.pod-two-splash-image h1{
+  color:black;
+  font-size:6rem;
+  margin:0
+}
+.pod-two-splash-image h4{
+  color:black;
+  font-size:3rem;
+  margin:0;
+}
+@media screen and (max-width: 1430px) {
+  .pod-two-splash-image h1{
+  color:black;
+  font-size:4rem;
+  margin:0
+}
+.pod-two-splash-image h4{
+  color:black;
+  font-size:1rem;
+  margin:0;
+}
 }
