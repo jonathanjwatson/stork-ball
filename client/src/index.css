@@ -173,3 +173,32 @@ position: absolute;
   top:-4rem;
   left:46%;
 }
+
+.pod-seven-splash-image{
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  height: 110vh;
+  font-size: 2rem;
+  color: black;
+  font-family: 'Crimson Text';
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  padding-top:3em;
+}
+
+.RSVP{
+  background-color: black;
+  color: white;
+  display:flex;
+  flex-wrap:wrap;
+  padding-top:4em;
+  padding-bottom:4em;
+}
+.RSVP-One{
+  width:50%
+}
+.RSVP-Two{
+  width:50%
+}
