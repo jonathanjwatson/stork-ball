@@ -46,11 +46,7 @@ position: absolute;
   font-size:5rem;
   margin:0;
 }
-.splash-image img{
-  position:absolute;
-  bottom:-4rem;
-  left:46%;
-}
+
 
 /* Pod Two */
 .pod-two-splash-image{
@@ -78,6 +74,11 @@ position: absolute;
   color:black;
   font-size:3rem;
   margin:0;
+}
+.pod-two-splash-image-top{
+  position:absolute;
+  top:-4rem;
+  left:46%;
 }
 
 /* Pod Three */
@@ -150,5 +151,25 @@ position: absolute;
 .pod-five-splash-image-bottom{
   position:absolute;
   bottom:-4rem;
+  left:46%;
+}
+
+/* Pod Six */
+.pod-six-splash-image{
+  background: url('./images/march.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 110vh;
+  font-size: 2rem;
+  color: black;
+  font-family: 'Crimson Text';
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  padding-top:3em;
+}
+.pod-six-splash-image-top{
+  position:absolute;
+  top:-4rem;
   left:46%;
 }

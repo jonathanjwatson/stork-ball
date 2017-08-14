@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import blackStorkCircle from '../images/black-stork-circle.png';
 
 
 class PodOne extends Component {
@@ -17,7 +16,6 @@ class PodOne extends Component {
                 <div>
                 <h3>TO THE FIRST ANNUAL STORK BALL</h3>
                 </div>
-                <img src={blackStorkCircle} />
                 </div>
                 
                 </div>

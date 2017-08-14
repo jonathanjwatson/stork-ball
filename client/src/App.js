@@ -5,6 +5,7 @@ import PodTwo from './components/PodTwo';
 import PodThree from './components/PodThree';
 import PodFour from './components/PodFour';
 import PodFive from './components/PodFive';
+import PodSix from './components/PodSix';
 
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
         <PodThree />
         <PodFour />
         <PodFive />
+        <PodSix />
       </div>
     );
   }
