@@ -52,6 +52,9 @@ class PodSeven extends Component {
 					<br />
                 </form>
 			</div>
+            <div className="RSVP-Submit">
+                <button>Submit Your Information</button>
+            </div>
 		</div>
 	</div>
 </div>
