@@ -4,6 +4,7 @@ import kirkCameron from '../images/KirkCameron.png';
 import martGreen from '../images/MartGreen.png';
 import jamesDobson from '../images/JamesDobson.png';
 import benhamBrothers from '../images/BenhamBrothers.png';
+import blueStorkCircle from '../images/Blue-Stork-Circle.png';
 
 
 class PodFive extends Component {
@@ -22,6 +23,7 @@ class PodFive extends Component {
                         <img className="pod-five-splash-image-bio" src={jamesDobson} />
                         <img className="pod-five-splash-image-bio" src={benhamBrothers} />
                 </div>
+                <img className="pod-five-splash-image-bottom" src={blueStorkCircle} />
                 </div>
             </div>
         );

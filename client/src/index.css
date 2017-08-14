@@ -147,25 +147,8 @@ position: absolute;
   top:0rem;
   left:45%
 }
-@media screen and (max-width: 1020) {
-  .pod-five-splash-image{
-    height:220vh;
-  }
-  .pod-four-splash-image{
-    height:100vh;
-  }
+.pod-five-splash-image-bottom{
+  position:absolute;
+  bottom:-4rem;
+  left:46%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
