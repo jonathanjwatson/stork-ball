@@ -1,5 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text");
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+.App {
+  text-align:center;
+}
+.splash-image{
+  background: url('./images/museum-1.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  font-size: 1rem;
+  color: white;
+  font-family: 'Crimson Text';
+  justify-content: center;
+  align-items: center;
+  position:relative
+}
+.splash-row{
+position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 30%;
+    width: 50%;
+    margin: -15% 0 0 -25%;
+}
+.row-top{
+  padding-top:4em;
+}
+.splash-image h1{
+  font-size:8rem;
+  font-weight:800;
+  margin:0;
+}
+.splash-image h2{
+  font-size: 6rem;
+  margin:0;
+}
+.splash-image h3{
+  font-size:5rem;
+  margin:0;
+}
+.splash-image img{
+  position:absolute;
+  bottom:-4rem;
+  left:46%;
+}
+@media screen and (max-width: 1430px) {
+  .row-top{
+    padding-top:4em;
+  }
+    .splash-image h1{
+        font-size:5;
+        font-weight:500;
+    }
+    .splash-image h2{
+      font-size:4em;
+    }
+    .splash-image h3{
+      font-size:2em;
+    }
 }
