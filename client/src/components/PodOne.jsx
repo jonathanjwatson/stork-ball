@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import styled from "styled-components";
 import blackStorkCircle from '../images/black-stork-circle.png';
-import { Row, Container } from 'react-bootstrap';
 
 
 class PodOne extends Component {
