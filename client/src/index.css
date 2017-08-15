@@ -168,7 +168,7 @@ position: absolute;
 
 /* Pod Six */
 .pod-six-splash-image{
-  background: url('./images/march.jpg');
+  background: url('./images/March4LifePic.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -294,5 +294,17 @@ background-color:black;
 }
 .pod-seven-splash-image h1{
   font-size:1.5em;
+}
+.RSVP{
+  flex-direction:column;
+}
+.RSVP-One {
+    width: 90%;
+    margin: auto;
+}
+.RSVP-Two {
+    width: 90%;
+    margin: auto;
+    margin-top:1em;
 }
 }
