@@ -5,6 +5,7 @@ import footer from '../images/SaveTheStorks-Footer.png';
 
 
 class PodEight extends Component {
+
     render() {
         return (
             <div>
