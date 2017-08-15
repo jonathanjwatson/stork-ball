@@ -15,10 +15,12 @@ class PodSeven extends Component {
 		<div className="RSVP">
         
 			<div className="RSVP-One">
+				
+				<form action="">
 				<span>TELL US ABOUT YOURSELF</span>
 				<br />
 				<span>Required</span>
-				<form action="">
+				<br />
 					<input type="text" placeholder="First Name"  />
 					<br />
 					<input type="email" placeholder="Email Address"  />
@@ -33,11 +35,16 @@ class PodSeven extends Component {
 					<br />
                 </form>
 			</div>
+			<div className="RSVP-Padding">
+			</div>
 			<div className="RSVP-Two">
+				
+	
+                <form action="">
 				<span>TELL US ABOUT YOUR GUEST</span>
 				<br />
 				<span>Optional</span>
-                <form action="">
+				<br />
 					<input type="text" placeholder="First Name" />
 					<br />
 					<input type="email" placeholder="Email Address" />

@@ -14,13 +14,14 @@ body {
   background: url('./images/museum-1.jpg');
   background-position: center;
   background-size: cover;
-  height: 75vh;
+  background-repeat: no-repeat;
   font-size: 1rem;
   color: white;
   font-family: 'Crimson Text';
   justify-content: center;
   align-items: center;
-  position:relative
+  position:relative;
+  padding-bottom:3em;
 }
 .splash-row{
 position: absolute;
@@ -53,7 +54,7 @@ position: absolute;
   background: url('./images/White-Background.png');
   background-position: center;
   background-size: cover;
-  height: 70vh;
+  background-repeat: no-repeat;
   font-size: 1rem;
   color: white;
   font-family: 'Crimson Text';
@@ -86,7 +87,8 @@ position: absolute;
   background: url('./images/museum-2.jpg');
   background-position: center;
   background-size: cover;
-  height: 75vh;
+  background-repeat: no-repeat;
+  min-height:80vh;
   font-size: 1rem;
   color: white;
   font-family: 'Crimson Text';
@@ -106,7 +108,7 @@ position: absolute;
   background: url('./images/White-Background.png');
   background-position: center;
   background-size: cover;
-  height: 80vh;
+  background-repeat: no-repeat;
   font-size: 2rem;
   color: black;
   font-family: 'Crimson Text';
@@ -124,7 +126,7 @@ position: absolute;
   background: url('./images/Black-Background.png');
   background-position: center;
   background-size: cover;
-  height: 110vh;
+  background-repeat: no-repeat;
   font-size: 2rem;
   color: black;
   font-family: 'Crimson Text';
@@ -159,14 +161,15 @@ position: absolute;
   background: url('./images/march.jpg');
   background-position: center;
   background-size: cover;
-  height: 110vh;
+  background-repeat: no-repeat;
+  min-height:80vh;
   font-size: 2rem;
   color: black;
   font-family: 'Crimson Text';
   justify-content: center;
   align-items: center;
   position:relative;
-  padding-top:3em;
+  padding-top:1em;
 }
 .pod-six-splash-image-top{
   position:absolute;
@@ -178,31 +181,57 @@ position: absolute;
   background-color: white;
   background-position: center;
   background-size: cover;
-  height: 110vh;
+  background-repeat: no-repeat;
   font-size: 2rem;
   color: black;
   font-family: 'Crimson Text';
   justify-content: center;
   align-items: center;
   position:relative;
-  padding-top:3em;
 }
 
 .RSVP{
-  background-color: black;
+  background-color: white;
   color: white;
   display:flex;
   flex-wrap:wrap;
   padding-top:4em;
   padding-bottom:4em;
+  justify-content:center;
 }
 .RSVP-One{
-  width:50%
+  width:35%;
+}
+.RSVP-One form{
+  background-color:black;
+  border-radius: 25px;
 }
 .RSVP-Two{
-  width:50%
+  width:35%;
+  
+}
+.RSVP-Padding{
+  width:5%;
+}
+.RSVP-Two form{
+background-color:black;
+  border-radius: 25px;
 }
 .RSVP-Submit{
   text-align:center;
   margin:auto;
+  width:50%
+}
+.pod-eight-splash-image{
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 2rem;
+  color: white;
+  font-family: 'Crimson Text';
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  padding-top:3em;
 }
