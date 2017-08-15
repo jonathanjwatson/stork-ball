@@ -15,6 +15,9 @@ class PodEight extends Component {
                 </div>
                 <img className="map-image" src={googleMap} />
                 <div>
+                    <p>For further information please contact Morgan Melendez at <a href="mailto:Morgan.Melendez@SavetheStorks.com">Morgan.Melendez@SavetheStorks.com</a></p>
+                </div>
+                <div>
                     <img  src={footer} />
                 </div>
             </div>
