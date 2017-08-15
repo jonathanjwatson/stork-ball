@@ -11,7 +11,8 @@ class PodSeven extends Component {
 				fullName: '',
 				email: '',
 				phone: '',
-				dinnerChoice: 'Chicken'
+				dinnerChoice: 'Chicken',
+				guest: []
 			},
 			addGuest: false
         }
