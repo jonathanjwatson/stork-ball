@@ -14,11 +14,15 @@ class PodSevenGuest extends Component {
 								<br />
 								<input type="phone" placeholder="Phone Number" />
 								<br />
-								<input type="radio" name="meal" value="chicken" checked /> Chicken
-								<br />
-								<input type="radio" name="meal" value="beef"  /> Beef
-								<br />
-								<input type="radio" name="meal" value="vegetarian"  /> Vegetarian
+								<select 
+									name="dinnerChoice"
+									// value={this.state.user.dinnerChoice}
+									// onChange={this._handleChange}
+								>
+									<option value="Chicken">Chicken</option>
+									<option value="Beef">Beef</option>
+									<option value="Vegetarian">Vegetarian</option>
+								</select>
 								<br />
                                 <button>Submit Your Information</button>
             </div>
