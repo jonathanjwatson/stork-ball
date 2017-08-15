@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PodSevenGuest from './PodSevenGuest';
 
 
 
@@ -11,7 +12,8 @@ class PodSeven extends Component {
 				email: '',
 				phone: '',
 				dinnerChoice: 'Chicken'
-			}
+			},
+			addGuest: false
         }
 	}
 	_handleChange = (e) => {
@@ -22,6 +24,10 @@ class PodSeven extends Component {
 		this.setState({ user });
 		console.log(this.state.user.fullName)
 		
+	}
+	_toggleGuest = (e) => {
+		const addGuest = !this.state.addGuest;
+		this.setState({ addGuest })
 	}
     render() {
         return (
@@ -85,34 +91,11 @@ class PodSeven extends Component {
 									<option value="Beef">Beef</option>
 									<option value="Vegetarian">Vegetarian</option>
 								</select>
+								<br />
+								<button onClick={this._toggleGuest}>Bring A Guest</button>
+								{ this.state.addGuest ? null : <div><button>Submit Your Information</button></div> }
+								{ this.state.addGuest ? <PodSevenGuest />: null}
 							</form>
-						</div>
-						<div className="RSVP-Padding">
-						</div>
-						<div className="RSVP-Two">
-							
-				
-							<form action="">
-							<span>TELL US ABOUT YOUR GUEST</span>
-							<br />
-							<span>Optional</span>
-							<br />
-								<input type="text" placeholder="First Name" />
-								<br />
-								<input type="email" placeholder="Email Address" />
-								<br />
-								<input type="phone" placeholder="Phone Number" />
-								<br />
-								<input type="radio" name="meal" value="chicken" checked /> Chicken
-								<br />
-								<input type="radio" name="meal" value="beef"  /> Beef
-								<br />
-								<input type="radio" name="meal" value="vegetarian"  /> Vegetarian
-								<br />
-							</form>
-						</div>
-						<div className="RSVP-Submit">
-							<button>Submit Your Information</button>
 						</div>
 					</div>
 				</div>
