@@ -3,7 +3,6 @@ import './App.css';
 import PodOne from './components/PodOne';
 import PodTwo from './components/PodTwo';
 import PodThree from './components/PodThree';
-import PodFour from './components/PodFour';
 import PodFive from './components/PodFive';
 import PodSix from './components/PodSix';
 import PodSeven from './components/PodSeven';
@@ -17,7 +16,6 @@ class App extends Component {
         <PodOne />
         <PodTwo />
         <PodThree />
-        <PodFour />
         <PodFive />
         <PodSix />
         <PodSeven />

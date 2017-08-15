@@ -21,11 +21,11 @@ class PodSeven extends Component {
 				<br />
 				<span>Required</span>
 				<br />
-					<input type="text" placeholder="First Name"  />
+					<input type="text" placeholder="First Name"  required/>
 					<br />
-					<input type="email" placeholder="Email Address"  />
+					<input type="email" placeholder="Email Address"  required/>
 					<br />
-					<input type="phone" placeholder="Phone Number (optional)" />
+					<input type="phone" placeholder="Phone Number" required/>
 					<br />
 					<input type="radio" name="meal" value="chicken" checked /> Chicken
 					<br />
@@ -49,7 +49,7 @@ class PodSeven extends Component {
 					<br />
 					<input type="email" placeholder="Email Address" />
 					<br />
-					<input type="phone" placeholder="Phone Number (optional)" />
+					<input type="phone" placeholder="Phone Number" />
 					<br />
 					<input type="radio" name="meal" value="chicken" checked /> Chicken
 					<br />
