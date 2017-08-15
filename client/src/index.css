@@ -79,7 +79,9 @@ position: absolute;
 .pod-two-splash-image-top{
   position:absolute;
   top:-4rem;
-  left:46%;
+  left:0;
+  right:0;
+  margin:auto;
 }
 
 /* Pod Three */
@@ -100,7 +102,9 @@ position: absolute;
 .pod-three-splash-image img{
   position:absolute;
   bottom:0rem;
-  left:46%;
+  left:0;
+  right:0;
+  margin:auto;
 }
 
 /* Pod Four */
@@ -140,20 +144,26 @@ position: absolute;
   display:flex;
   flex-wrap:wrap;
   text-align: justify;
+  padding-bottom:2em;
 }
+
+/* Pod Five */
 .pod-five-splash-image-bio{
-  padding:65px;
   margin:auto;
 }
 .pod-five-splash-image-point{
   position:absolute;
   top:0rem;
-  left:45%
+  left:0;
+  right:0;
+  margin:auto;
 }
 .pod-five-splash-image-bottom{
   position:absolute;
   bottom:-4rem;
-  left:46%;
+  left:0;
+  right:0;
+  margin:auto;
 }
 
 /* Pod Six */
@@ -165,6 +175,7 @@ position: absolute;
   min-height:80vh;
   font-size: 2rem;
   color: black;
+  text-shadow: 2px 2px 2px #fff;
   font-family: 'Crimson Text';
   justify-content: center;
   align-items: center;
@@ -174,9 +185,13 @@ position: absolute;
 .pod-six-splash-image-top{
   position:absolute;
   top:-4rem;
-  left:46%;
+  left:0;
+  right:0;
+  margin:auto;
 }
 
+
+/* Pod Seven */
 .pod-seven-splash-image{
   background-color: white;
   background-position: center;
@@ -222,6 +237,8 @@ background-color:black;
   margin:auto;
   width:50%
 }
+
+/* Pod Eight */
 .pod-eight-splash-image{
   background-color: black;
   background-position: center;
@@ -234,4 +251,48 @@ background-color:black;
   align-items: center;
   position:relative;
   padding-top:3em;
+}
+.map-image{
+  width:80%;
+}
+
+@media only screen and (max-width: 700px) {
+.splash-image{
+  padding-bottom:4em;
+}
+.splash-image h1{
+  font-size:4rem;
+  font-weight:800;
+  margin:0;
+}
+.splash-image h2{
+  font-size: 3rem;
+  margin:0;
+}
+.splash-image h3{
+  font-size:2rem;
+  margin:0;
+}
+.pod-two-splash-image h1{
+  color:black;
+  font-size:3rem;
+  margin:0
+}
+.pod-two-splash-image h4{
+  color:black;
+  font-size:1rem;
+  margin:0;
+}
+.speaker-row{
+  padding-bottom:0;
+}
+.pod-five-splash-image-bio{
+  padding-bottom:2em;
+}
+.text-area-three{
+  margin:1.5em;
+}
+.pod-seven-splash-image h1{
+  font-size:1.5em;
+}
 }

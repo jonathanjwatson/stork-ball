@@ -13,9 +13,9 @@ class PodEight extends Component {
                 <h1>LOCATION & HOTELS</h1>
                 <p>Our guests are eligible for special pricing at these hotels near the museum</p>
                 </div>
-                <img src={googleMap} />
+                <img className="map-image" src={googleMap} />
                 <div>
-                    <img src={footer} />
+                    <img  src={footer} />
                 </div>
             </div>
             
