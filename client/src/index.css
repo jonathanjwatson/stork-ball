@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Crimson+Text");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
 
 body {
   margin: 0;
@@ -207,15 +209,62 @@ position: absolute;
 
 .RSVP{
   background-color: white;
+  font-family: 'Lato';
   color: white;
   display:flex;
   flex-wrap:wrap;
-  padding-top:4em;
   padding-bottom:4em;
   justify-content:center;
 }
+.RSVP input{
+  width:26em;
+  height:3em;
+  border: 0;
+}
+.RSVP select{
+  width:26em;
+  height:3em;
+}
+.RSVP form{
+  padding-bottom:1em;
+  padding-top:1em;
+}
+.RSVP button {
+    
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:4px;
+}
+.RSVP-primary-button{
+  background-color: #1b4c75;
+  color: white;
+  border: none;
+  margin-top:.5em;
+}
+.RSVP-secondary-button{
+    background-color: #fff;
+    color: #1b4c75;
+    border: 2px solid #1b4c75;
+    margin-top:.5em;
+}
 .RSVP-One{
   width:35%;
+  padding-top:1em;
+  padding-bottom:1em;
+}
+.RSVP-One h4{
+  font-family: 'Crimson Text';
+  margin:0;
+  padding-top:1em;
+}
+.RSVP-One p{
+  font-family: 'Lato';
+  font-size:.75em;
+  font-style:italic;
+  margin:0;
 }
 .RSVP-One form{
   background-color:black;
@@ -223,6 +272,7 @@ position: absolute;
 }
 .RSVP-Two{
   width:35%;
+  margin:0;
   
 }
 .RSVP-Padding{

@@ -44,9 +44,8 @@ class PodSeven extends Component {
 						<div className="RSVP-One">
 							
 							<form action="">
-							<span>TELL US ABOUT YOURSELF</span>
-							<br />
-							<span>Required</span>
+							<h4>TELL US ABOUT YOURSELF</h4>
+							<p>Required</p>
 							<br />
 								<label htmlFor="fullName">Full Name</label>
 								<br />
@@ -70,7 +69,7 @@ class PodSeven extends Component {
 									required
 								/>
 								<br />
-								<label htmlFor="phone">Email</label>
+								<label htmlFor="phone">Phone Number</label>
 								<br />
 								<input 
 									type="text" 
@@ -93,8 +92,8 @@ class PodSeven extends Component {
 									<option value="Vegetarian">Vegetarian</option>
 								</select>
 								<br />
-								<button onClick={this._toggleGuest}>Bring A Guest</button>
-								{ this.state.addGuest ? null : <div><button>Submit Your Information</button></div> }
+								<button className="RSVP-secondary-button" onClick={this._toggleGuest}>Bring A Guest</button>
+								{ this.state.addGuest ? null : <div><button className="RSVP-primary-button">Submit Your Information</button></div> }
 								{ this.state.addGuest ? <PodSevenGuest />: null}
 							</form>
 						</div>
