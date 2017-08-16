@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PodSevenGuest from './PodSevenGuest';
 
 
 
@@ -12,7 +11,10 @@ class PodSeven extends Component {
 				email: '',
 				phone: '',
 				dinnerChoice: 'Chicken',
-				guest: {}
+				guest: {
+					guestFullName: '',
+					guestDinnerChoice: 'Chicken'
+				}
 			},
 			addGuest: false
         }
@@ -24,13 +26,21 @@ class PodSeven extends Component {
 		user[attributeName] = attributeValue;
 		this.setState({ user });
 		console.log(this.state.user.fullName)
-		
+	}
+	_handleGuestChange = (e) => {
+		const attributeName = e.target.name;
+		const attributeValue = e.target.value;
+		const user = {...this.state.user};
+		user.guest[attributeName] = attributeValue;
+		this.setState({ user });
+		console.log(this.state.user.fullName)
 	}
 	_toggleGuest = (e) => {
 		e.preventDefault();
 		const addGuest = !this.state.addGuest;
 		this.setState({ addGuest })
 	}
+	
     render() {
         return (
             
@@ -95,7 +105,33 @@ class PodSeven extends Component {
 								<br />
 								<button className="RSVP-secondary-button" onClick={this._toggleGuest}>Bring A Guest</button>
 								{ this.state.addGuest ? null : <div><button className="RSVP-primary-button">Submit Your Information</button></div> }
-								{ this.state.addGuest ? <PodSevenGuest guest={this.state.user.guest}/>: null}
+								{ this.state.addGuest ? <div>
+                <h4>TELL US ABOUT YOUR GUEST</h4>
+							<p>Optional</p>
+							<br />
+                                <label htmlFor="guestFullName">Guest Name</label>
+                                <br />
+                                <input 
+									type="text"
+									onChange={this._handleGuestChange}
+									value={this.state.user.guest.guestFullName}
+									name="guestFullName"
+                                    placeholder="Name" />
+								<br />
+                                <label htmlFor="guestDinnerChoice">Guest Dinner Choice</label>
+                                <br />
+								<select 
+									name="guestDinnerChoice"
+									value={this.state.user.guest.guestDinnerChoice}
+									onChange={this._handleGuestChange}
+								>
+									<option value="Chicken">Chicken</option>
+									<option value="Beef">Beef</option>
+									<option value="Vegetarian">Vegetarian</option>
+								</select>
+								<br />
+                                <button className="RSVP-primary-button">Submit Both</button>
+            </div> : null}
 							</form>
 						</div>
 					</div>

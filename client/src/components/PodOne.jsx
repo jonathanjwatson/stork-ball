@@ -6,7 +6,7 @@ class PodOne extends Component {
         return (
             <div>
                 <div className="splash-image">
-                <div class="splash-row">
+                <div>
                 <div className="row-top">
                 <h2>YOU ARE</h2>
                 </div>
