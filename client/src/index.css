@@ -309,6 +309,7 @@ background-color:black;
   position:relative;
   padding-top:3em;
 }
+
 .pod-eight-splash-image button {
     padding: 15px 32px;
     text-align: center;
@@ -379,5 +380,8 @@ background-color:black;
     width: 90%;
     margin: auto;
     margin-top:1em;
+}
+.pod-eight-splash-image h1{
+  font-size:1em;
 }
 }

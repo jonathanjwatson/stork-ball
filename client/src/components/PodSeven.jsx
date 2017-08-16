@@ -127,32 +127,33 @@ class PodSeven extends Component {
 								<br />
 								<button className="RSVP-secondary-button" onClick={this._toggleGuest}>Bring A Guest</button>
 								{ this.state.addGuest ? null : <div><button onClick={this._handleSubmit} className="RSVP-primary-button">Submit Your Information</button></div> }
-								{ this.state.addGuest ? <div>
-                <h4>TELL US ABOUT YOUR GUEST</h4>
-							<br />
-                                <label htmlFor="guestFullName">Guest Name</label>
-                                <br />
-                                <input 
-									type="text"
-									onChange={this._handleGuestChange}
-									value={this.state.user.guest.guestFullName}
-									name="guestFullName"
-                                    placeholder="Name" />
-								<br />
-                                <label htmlFor="guestDinnerChoice">Guest Dinner Choice</label>
-                                <br />
-								<select 
-									name="guestDinnerChoice"
-									value={this.state.user.guest.guestDinnerChoice}
-									onChange={this._handleGuestChange}
-								>
-									<option value="Chicken">Chicken</option>
-									<option value="Beef">Beef</option>
-									<option value="Vegetarian">Vegetarian</option>
-								</select>
-								<br />
-                                <button className="RSVP-primary-button" onClick={this._handleSubmit}>Submit Both</button>
-            </div> : null}
+								{ this.state.addGuest ? 
+								<div>
+									<h4>TELL US ABOUT YOUR GUEST</h4>
+									<br />
+										<label htmlFor="guestFullName">Guest Name</label>
+										<br />
+										<input 
+											type="text"
+											onChange={this._handleGuestChange}
+											value={this.state.user.guest.guestFullName}
+											name="guestFullName"
+											placeholder="Name" />
+										<br />
+										<label htmlFor="guestDinnerChoice">Guest Dinner Choice</label>
+										<br />
+										<select 
+											name="guestDinnerChoice"
+											value={this.state.user.guest.guestDinnerChoice}
+											onChange={this._handleGuestChange}
+										>
+											<option value="Chicken">Chicken</option>
+											<option value="Beef">Beef</option>
+											<option value="Vegetarian">Vegetarian</option>
+										</select>
+										<br />
+										<button className="RSVP-primary-button" onClick={this._handleSubmit}>Submit Both</button>
+								</div> : null}
 							</form>
 						</div>
 					</div>
