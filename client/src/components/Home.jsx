@@ -7,7 +7,6 @@ import PodFive from './PodFive';
 import PodSix from './PodSix';
 import PodSeven from './PodSeven';
 import PodEight from './PodEight';
-import UserList from './UserList';
 
 
 class Home extends Component {

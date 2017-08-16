@@ -7,6 +7,9 @@ class UserList extends Component {
         super();
         this.state = {
             users: [
+                {user: {
+                    guest: {}
+                }}
             ]
         }
     }
@@ -14,7 +17,6 @@ class UserList extends Component {
         this._getUserData();
     }
     _getUserData = () => {
-        const userId = this.props.match.params.userId
         axios.get(`/api/user/`)
         .then(res => {
             this.setState({users: res.data})
@@ -27,6 +29,7 @@ class UserList extends Component {
             console.log(user);
             return <IndividualUser
             {...user}
+            guest={user.guest}
             key={i}
             />;
         })

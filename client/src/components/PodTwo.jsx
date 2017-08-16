@@ -7,7 +7,7 @@ class PodTwo extends Component {
         return (
             <div>
                 <div className="pod-two-splash-image"> 
-                <img className="pod-two-splash-image-top" src={blackStork} />
+                <img className="pod-two-splash-image-top" src={blackStork} alt="Black Stork" />
                 <div className="text-area">
                 <h4>We will be spending the evening of</h4>
                 <h1>January 18, 2018</h1>
