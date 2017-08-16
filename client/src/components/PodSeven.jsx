@@ -13,7 +13,7 @@ class PodSeven extends Component {
 				phone: '',
 				dinnerChoice: 'Chicken',
 				guest: {
-					guestFullName: '',
+					guestFullName: null,
 					guestDinnerChoice: 'Chicken'
 				}
 			},
@@ -55,8 +55,17 @@ class PodSeven extends Component {
 	}
 	
     render() {
+
+		if (this.state.submittedForm) {
+			return (
+				<div className="pod-seven-splash-image">
+					<h4>Thank you for submitting your response! We'll be in touch shortly.</h4>
+				</div>
+			)
+		} else {
+
+
         return (
-            
 			<div>
 				<div className="pod-seven-splash-image">
 					<div className="text-area-three">
@@ -120,7 +129,6 @@ class PodSeven extends Component {
 								{ this.state.addGuest ? null : <div><button onClick={this._handleSubmit} className="RSVP-primary-button">Submit Your Information</button></div> }
 								{ this.state.addGuest ? <div>
                 <h4>TELL US ABOUT YOUR GUEST</h4>
-							<p>Optional</p>
 							<br />
                                 <label htmlFor="guestFullName">Guest Name</label>
                                 <br />
@@ -151,6 +159,7 @@ class PodSeven extends Component {
 				</div>
 			</div>
 		);
+	}
     }
 }
 
