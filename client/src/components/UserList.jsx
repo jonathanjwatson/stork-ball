@@ -8,7 +8,9 @@ class UserList extends Component {
         this.state = {
             users: [
                 {user: {
-                    guest: {}
+                    guest: {
+                        
+                    }
                 }}
             ]
         }
@@ -29,7 +31,6 @@ class UserList extends Component {
             console.log(user);
             return <IndividualUser
             {...user}
-            guest={user.guest}
             key={i}
             />;
         })
