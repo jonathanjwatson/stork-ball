@@ -6,7 +6,11 @@ const userSchema = mongoose.Schema({
   email: String,
   phone: String,
   dinnerChoice: String,
-  registeredOn: Date
+  registeredOn: Date,
+  guest: {
+    guestFullName: String,
+    guestDinnerChoice: String
+  }
 });
 
 

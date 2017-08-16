@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 
 
@@ -16,7 +17,8 @@ class PodSeven extends Component {
 					guestDinnerChoice: 'Chicken'
 				}
 			},
-			addGuest: false
+			addGuest: false,
+			submittedForm: false
         }
 	}
 	_handleChange = (e) => {
@@ -39,6 +41,17 @@ class PodSeven extends Component {
 		e.preventDefault();
 		const addGuest = !this.state.addGuest;
 		this.setState({ addGuest })
+	}
+	_handleSubmit = (e) => {
+		e.preventDefault();
+		console.log(this.state.user);
+		const payload = this.state.user;
+		axios.post(`/api/user/create`, payload)
+		.then((res) => {
+			console.log("success")
+			const submittedForm = !submittedForm
+			this.setState({submittedForm})
+		})
 	}
 	
     render() {
@@ -104,7 +117,7 @@ class PodSeven extends Component {
 								</select>
 								<br />
 								<button className="RSVP-secondary-button" onClick={this._toggleGuest}>Bring A Guest</button>
-								{ this.state.addGuest ? null : <div><button className="RSVP-primary-button">Submit Your Information</button></div> }
+								{ this.state.addGuest ? null : <div><button onClick={this._handleSubmit} className="RSVP-primary-button">Submit Your Information</button></div> }
 								{ this.state.addGuest ? <div>
                 <h4>TELL US ABOUT YOUR GUEST</h4>
 							<p>Optional</p>
@@ -130,14 +143,14 @@ class PodSeven extends Component {
 									<option value="Vegetarian">Vegetarian</option>
 								</select>
 								<br />
-                                <button className="RSVP-primary-button">Submit Both</button>
+                                <button className="RSVP-primary-button" onClick={this._handleSubmit}>Submit Both</button>
             </div> : null}
 							</form>
 						</div>
 					</div>
 				</div>
 			</div>
-        );
+		);
     }
 }
 

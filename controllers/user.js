@@ -11,16 +11,16 @@ router.get("/", (req, res) => {
   });
 });
 
-router.post("/email/:email", (req, res) => {
-  const userEmail = req.params.email;
-  User.findOne({"email": userEmail}).then((user) => {
-    res.json(user);
-  })
-})
-router.get("/:id", (req, res) => {
-  User.findById(req.params.id).then((user) => {
-    res.json(user);
-  })
+router.post("/create", (req, res) => {
+    console.log("Hit the API")
+    const newUserInfo = req.body
+    console.log(newUserInfo)
+    const newUser = new User(newUserInfo);
+    newUser.save()
+    .then(() => {
+        res.send("You did it!");
+    })
+    .catch(err => console.log(err));
 })
 
 

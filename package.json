@@ -13,7 +13,7 @@
     "postinstall": "cd client && npm install && npm run build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jonathan J. Watson",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.2",
