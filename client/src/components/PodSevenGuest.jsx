@@ -7,19 +7,19 @@ class PodSevenGuest extends Component {
                 <h4>TELL US ABOUT YOUR GUEST</h4>
 							<p>Optional</p>
 							<br />
-                                <label htmlFor="fullName">Guest Name</label>
+                                <label htmlFor="guestFullName">Guest Name</label>
                                 <br />
 								<input type="text" placeholder="First Name" />
 								<br />
-                                <label htmlFor="email">Guest Email</label>
+                                <label htmlFor="guestEmail">Guest Email</label>
                                 <br />
 								<input type="email" placeholder="Email Address" />
 								<br />
-                                <label htmlFor="phone">Guest Phone Number</label>
+                                <label htmlFor="guestPhone">Guest Phone Number</label>
                                 <br />
 								<input type="phone" placeholder="Phone Number" />
 								<br />
-                                <label htmlFor="dinnerChoice">Guest Dinner Choice</label>
+                                <label htmlFor="guestDinnerChoice">Guest Dinner Choice</label>
                                 <br />
 								<select 
 									name="dinnerChoice"

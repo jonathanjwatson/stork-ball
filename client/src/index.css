@@ -236,6 +236,7 @@ position: absolute;
     display: inline-block;
     font-size: 16px;
     border-radius:4px;
+    width:18em;
 }
 .RSVP select{
   background-color:#fff;
@@ -267,6 +268,10 @@ position: absolute;
   font-size:.75em;
   font-style:italic;
   margin:0;
+}
+.RSVP-One label{
+  font-size:.5em;
+  margin:.25rem;
 }
 .RSVP-One form{
   background-color:black;
