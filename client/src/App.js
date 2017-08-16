@@ -1,25 +1,22 @@
 import React, { Component } from 'react';
 import './App.css';
-import PodOne from './components/PodOne';
-import PodTwo from './components/PodTwo';
-import PodThree from './components/PodThree';
-import PodFive from './components/PodFive';
-import PodSix from './components/PodSix';
-import PodSeven from './components/PodSeven';
-import PodEight from './components/PodEight';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from './components/Home';
+import UserList from './components/UserList';
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <PodOne />
-        <PodTwo />
-        <PodThree />
-        <PodFive />
-        <PodSix />
-        <PodSeven />
-        <PodEight />
+      <div>
+      <div>
+      <Router>
+        <div>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/displayUsers/756487930192" component={UserList} />
+        </div>
+      </Router>
+      </div>
       </div>
     );
   }
