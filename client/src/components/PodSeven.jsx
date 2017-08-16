@@ -12,7 +12,7 @@ class PodSeven extends Component {
 				email: '',
 				phone: '',
 				dinnerChoice: 'Chicken',
-				guest: []
+				guest: {}
 			},
 			addGuest: false
         }
@@ -27,6 +27,7 @@ class PodSeven extends Component {
 		
 	}
 	_toggleGuest = (e) => {
+		e.preventDefault();
 		const addGuest = !this.state.addGuest;
 		this.setState({ addGuest })
 	}
@@ -94,7 +95,7 @@ class PodSeven extends Component {
 								<br />
 								<button className="RSVP-secondary-button" onClick={this._toggleGuest}>Bring A Guest</button>
 								{ this.state.addGuest ? null : <div><button className="RSVP-primary-button">Submit Your Information</button></div> }
-								{ this.state.addGuest ? <PodSevenGuest />: null}
+								{ this.state.addGuest ? <PodSevenGuest guest={this.state.user.guest}/>: null}
 							</form>
 						</div>
 					</div>

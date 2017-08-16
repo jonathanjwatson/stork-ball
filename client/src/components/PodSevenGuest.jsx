@@ -9,7 +9,7 @@ class PodSevenGuest extends Component {
 							<br />
                                 <label htmlFor="guestFullName">Guest Name</label>
                                 <br />
-								<input type="text" placeholder="First Name" />
+								<input type="text" placeholder="Name" />
 								<br />
                                 <label htmlFor="guestEmail">Guest Email</label>
                                 <br />
