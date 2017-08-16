@@ -230,13 +230,15 @@ position: absolute;
   padding-top:1em;
 }
 .RSVP button {
-    
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     border-radius:4px;
+}
+.RSVP select{
+  background-color:#fff;
 }
 .RSVP-primary-button{
   background-color: #1b4c75;
@@ -251,7 +253,7 @@ position: absolute;
     margin-top:.5em;
 }
 .RSVP-One{
-  width:35%;
+  width:40%;
   padding-top:1em;
   padding-bottom:1em;
 }

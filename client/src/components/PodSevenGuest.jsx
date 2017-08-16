@@ -31,7 +31,7 @@ class PodSevenGuest extends Component {
 									<option value="Vegetarian">Vegetarian</option>
 								</select>
 								<br />
-                                <button>Submit Your Information</button>
+                                <button className="RSVP-primary-button">Submit Your Information</button>
             </div>
         );
     }
