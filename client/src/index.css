@@ -217,13 +217,15 @@ position: absolute;
   justify-content:center;
 }
 .RSVP input{
-  width:26em;
-  height:3em;
+  width:70%;
+  height:7em;
   border: 0;
+  margin-bottom:2em;
 }
 .RSVP select{
-  width:26em;
-  height:3em;
+  width:70%;
+  height:7em;
+  margin-bottom:2em;
 }
 .RSVP form{
   padding-bottom:1em;
@@ -236,7 +238,7 @@ position: absolute;
     display: inline-block;
     font-size: 16px;
     border-radius:4px;
-    width:18em;
+    font-size:2rem;
 }
 .RSVP select{
   background-color:#fff;
@@ -254,14 +256,14 @@ position: absolute;
     margin-top:.5em;
 }
 .RSVP-One{
-  width:40%;
+  width:70%;
   padding-top:1em;
   padding-bottom:1em;
 }
 .RSVP-One h4{
   font-family: 'Crimson Text';
   margin:0;
-  padding-top:1em;
+  font-size:2em;
 }
 .RSVP-One p{
   font-family: 'Lato';
@@ -270,7 +272,7 @@ position: absolute;
   margin:0;
 }
 .RSVP-One label{
-  font-size:.5em;
+  font-size:2rem;
   margin:.25rem;
 }
 .RSVP-One form{
@@ -366,6 +368,9 @@ background-color:black;
 .text-area-three{
   margin:1.5em;
 }
+.pod-six-splash-image p{
+  font-size:.65em;
+}
 .pod-seven-splash-image h1{
   font-size:1.5em;
 }
@@ -375,6 +380,9 @@ background-color:black;
 .RSVP-One {
     width: 90%;
     margin: auto;
+}
+.RSVP-One h4{
+  font-size:1.2em;
 }
 .RSVP-Two {
     width: 90%;
