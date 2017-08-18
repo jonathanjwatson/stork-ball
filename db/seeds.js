@@ -14,7 +14,11 @@ const userOne = new User({
     email: "jonathanwatson1@gmail.com",
     phone: "757-447-7332",
     dinnerChoice: "Beef",
-    registeredOn: ''
+    registeredOn: '',
+    guest: {
+        guestFullName: null,
+        guestDinnerChoice: "Chicken"
+      }
 })
 
 userOne.save().then(() => console.log("User One Saved!"));

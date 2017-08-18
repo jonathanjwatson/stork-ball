@@ -35,7 +35,8 @@ class UserList extends Component {
             />;
         })
         return (
-            <div>
+            <div className="row">
+                <h1>Registered Users</h1>
                 {userComponent}
             </div>
         );

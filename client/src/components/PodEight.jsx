@@ -21,12 +21,12 @@ class PodEight extends Component {
                     <p>Kimpton Hotel</p>
                     <a href="https://gc.synxis.com/rez.aspx?Hotel=26732&Chain=10179&arrive=1/18/2018&depart=1/20/2018&adult=1&child=0&group=11420108031"><button className="RSVP-primary-button">Reserve Now</button></a>
                 </div>
-                <img className="map-image" src={googleMap} />
+                <img className="map-image" src={googleMap} alt="google map"/>
                 <div>
                     <p className="email-notice">For further information please contact Morgan Melendez at <a href="mailto:Morgan.Melendez@SavetheStorks.com">Morgan.Melendez@SavetheStorks.com</a></p>
                 </div>
                 <div>
-                    <img  src={footer} />
+                    <img  src={footer} alt="stork footer logo" />
                 </div>
             </div>
             

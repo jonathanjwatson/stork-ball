@@ -5,6 +5,7 @@ import jamesDobson from '../images/JamesDobson.png';
 import benhamBrothers from '../images/BenhamBrothers.png';
 import joeBaker from '../images/JoeBaker.png';
 import shariRigby from '../images/ShariRigby.png';
+import bruceWilkinson from '../images/BruceWilkinson.png';
 import blueStorkCircle from '../images/Blue-Stork-Circle.png';
 
 
@@ -17,18 +18,21 @@ class PodFive extends Component {
                 
                 
                 <div className="speaker-row">
-                        <img className="pod-five-splash-image-bio" src={kirkCameron} />
-                        <img className="pod-five-splash-image-bio" src={martGreen} />
+                        <img className="pod-five-splash-image-bio" src={kirkCameron} alt="Kirk Cameron"/>
+                        <img className="pod-five-splash-image-bio" src={martGreen} alt="Mart Green"/>
                 </div>
                 <div className="speaker-row">
-                        <img className="pod-five-splash-image-bio" src={jamesDobson} />
-                        <img className="pod-five-splash-image-bio" src={benhamBrothers} />
+                        <img className="pod-five-splash-image-bio" src={jamesDobson} alt="James Dobson"/>
+                        <img className="pod-five-splash-image-bio" src={benhamBrothers} alt="Benham Brothers"/>
                 </div>
                 <div className="speaker-row">
-                        <img className="pod-five-splash-image-bio" src={joeBaker} />
-                        <img className="pod-five-splash-image-bio" src={shariRigby} />
+                        <img className="pod-five-splash-image-bio" src={joeBaker} alt="Joe Baker"/>
+                        <img className="pod-five-splash-image-bio" src={shariRigby} alt="Shari Rigby"/>
                 </div>
-                <img className="pod-five-splash-image-bottom" src={blueStorkCircle} />
+                <div className="speaker-row">
+                        <img className="pod-five-splash-image-bio" src={bruceWilkinson} alt="Bruce Wilkinson"/>
+                </div>
+                <img className="pod-five-splash-image-bottom" src={blueStorkCircle} alt="blue stork circle icon"/>
                 </div>
             </div>
         );

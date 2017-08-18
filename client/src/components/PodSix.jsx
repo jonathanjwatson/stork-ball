@@ -8,7 +8,7 @@ class PodSix extends Component {
         return (
             <div>
                 <div className="pod-six-splash-image">
-                <img className="pod-six-splash-image-top" src={blueStork} />
+                <img className="pod-six-splash-image-top" src={blueStork} alt="blue stork icon"/>
                 <div className="text-area-three">
                 <p>The day following the Stork Ball, we'll be walking down Constitution Avenue in unity, participating in the March for Life. Join us on the front lines as we hand out signs and experience the passion at the heart of the movement!</p>
                 </div>

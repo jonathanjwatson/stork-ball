@@ -6,13 +6,23 @@ class IndividualUser extends Component {
     render() {
         console.log(this.props);
         return (
-            <div>
+            <div className="individualUser">
+            <div className="attendee">
                 <h3>Attendee: {this.props.fullName}</h3>
                 <p>Email: {this.props.email}</p>
                 <p>Phone: {this.props.phone}</p>
                 <p>Dinner Selection: {this.props.dinnerChoice}</p>
-                <p>Guest Name: {this.props.guest.guestFullName}</p>
-                <p>Guest Dinner Selection: {this.props.guest.guestDinnerChoice}</p>
+                <IndividualGuest guest={this.props.guest} />
+                <p>Registered One: {this.props.registeredOn}</p>
+            </div>
+            <div className="notes">
+                <div>
+                <textarea class="input" rows="10" cols="100">Some text here</textarea>
+            </div>
+            <div >
+            <button>Save</button>
+            </div>
+            </div>
             </div>
         );
     }
