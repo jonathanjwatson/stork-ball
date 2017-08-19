@@ -222,7 +222,7 @@ position: absolute;
 }
 .RSVP input{
   width:65%;
-  height:2em;
+  height:1em;
   border: 0;
   margin-bottom:2em;
   font-size:1em;
@@ -231,7 +231,7 @@ position: absolute;
 }
 .RSVP select{
   width:70%;
-  height:4em;
+  height:3em;
   margin-bottom:2em;
   font-size:1em;
   font-weight:700;
@@ -323,17 +323,19 @@ background-color:black;
 }
 
 .pod-eight-splash-image button {
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius:4px;
-    width:18em;
-    background-color: #1b4c75;
-    color: white;
-    border: none;
-    margin: .5em;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius:4px;
+  font-size:1.5rem;
+  background-color: #1b4c75;
+  color: white;
+  border: none;
+  margin-top:.5em;
+}
+.hotel-button{
+  padding-bottom:1em;
 }
 .map-image{
   width:80%;

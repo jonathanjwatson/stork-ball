@@ -125,7 +125,7 @@ class PodSeven extends Component {
 									<option value="Vegetarian">Vegetarian</option>
 								</select>
 								<br />
-								<button className="RSVP-secondary-button" onClick={this._toggleGuest}>Bring A Guest</button>
+								<button className="RSVP-secondary-button" onClick={this._toggleGuest}>Bring A Date</button>
 								{ this.state.addGuest ? null : <div><button onClick={this._handleSubmit} className="RSVP-primary-button">Submit Your Information</button></div> }
 								{ this.state.addGuest ? 
 								<div>
