@@ -418,6 +418,7 @@ background-color:black;
 }
 .RSVP button{
   font-size:1.5rem;
+  padding:.5em;
 }
 .RSVP-One h4{
   font-size:1.2em;
@@ -426,6 +427,23 @@ background-color:black;
     width: 90%;
     margin: auto;
     margin-top:1em;
+}
+.RSVP input {
+  width: 70%;
+  height: 1em;
+  border: 0;
+  margin-bottom: 2em;
+  font-size: .75em;
+  font-weight: 700;
+  padding: .5em;
+}
+.RSVP select {
+  width: 70%;
+  height: 2.3em;
+  margin-bottom: 2em;
+  font-size: .75em;
+  font-weight: 700;
+  padding: .5em;
 }
 .pod-eight-splash-image h1{
   font-size:1em;
