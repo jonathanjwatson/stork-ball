@@ -87,7 +87,7 @@ class PodSeven extends Component {
 									onChange={this._handleChange}
 									value={this.state.user.fullName}
 									name="fullName"
-									 
+									placeholder="Full Name"
 									required
 								/>
 								<br />
@@ -98,7 +98,7 @@ class PodSeven extends Component {
 									onChange={this._handleChange}
 									value={this.state.user.email}
 									name="email"
-									 
+									placeholder="Email Address"
 									required
 								/>
 								<br />
@@ -109,7 +109,7 @@ class PodSeven extends Component {
 									onChange={this._handleChange}
 									value={this.state.user.phone}
 									name="phone"
-									
+									placeholder="Phone Number"
 									required
 								/>
 								<br />
@@ -138,6 +138,7 @@ class PodSeven extends Component {
 											onChange={this._handleGuestChange}
 											value={this.state.user.guest.guestFullName}
 											name="guestFullName"
+											placeholder="Guest Name"
 											 />
 										<br />
 										<label htmlFor="guestDinnerChoice">Guest Dinner Choice</label>
