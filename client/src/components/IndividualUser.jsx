@@ -13,7 +13,7 @@ class IndividualUser extends Component {
                 <p>Phone: {this.props.phone}</p>
                 <p>Dinner Selection: {this.props.dinnerChoice}</p>
                 <IndividualGuest guest={this.props.guest} />
-                <p>Registered One: {this.props.registeredOn}</p>
+                <p>Registered On: {this.props.registeredOn}</p>
             </div>
             <div className="notes">
                 <div>
