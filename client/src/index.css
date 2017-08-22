@@ -152,6 +152,15 @@ position: absolute;
   text-align: justify;
   padding-bottom:2.5em;
 }
+.speaker-header{
+  text-align:center;
+  padding-bottom:2em;
+}
+.speaker-header h1{
+  text-align:center;
+  color: white;
+  text-decoration:underline;
+}
 
 /* Pod Five */
 .pod-five-splash-image-bio{

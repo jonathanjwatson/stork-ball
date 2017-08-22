@@ -15,6 +15,9 @@ class PodFive extends Component {
             <div>
                 
                 <div className="pod-five-splash-image">  
+                <div className="speaker-header">
+                <h1>Speakers and Honored Guests</h1>
+                </div>
                 
                 
                 <div className="speaker-row">
