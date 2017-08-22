@@ -70,7 +70,7 @@ class PodSeven extends Component {
 				<div className="pod-seven-splash-image">
 					<div className="text-area-three">
 						<h1>RSVP</h1>
-						<p>We hope you can join us for this special evening. If so, please tell us a few details about yourself and your guest (if you choose to bring one), and we'll take care of all the details.</p>
+						<p>We hope you can join us for this special evening. If so, please tell us a few details about yourself and your guest (if you choose to bring one), and we'll take care of all the details. Childcare will be provided.</p>
 					</div>
 					<div className="RSVP">
 					
