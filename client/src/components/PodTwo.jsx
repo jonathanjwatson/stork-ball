@@ -13,7 +13,7 @@ class PodTwo extends Component {
                 <h1>January 18, 2018</h1>
                 <h4>on the top floor of the</h4>
                 <h1>MUSEUM OF THE BIBLE</h1>
-                <h4>Come with your best date and your best outfit, to eat, drink, and share the night with Save the Storks.</h4>    
+                <h4>Come with your best date and your best outfit, to eat, drink, give, and share the night with Save the Storks. We're going to be doing a live auction and giving you the financial opportunity to be a crucial role in our future of serving mothers and saving moms.</h4>    
                 </div>       
                 </div>
             </div>
