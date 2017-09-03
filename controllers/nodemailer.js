@@ -18,17 +18,19 @@ router.post('/', (req, res) => {
         }
     });
     // var text = `Hello world from \n\n + ${req.body.name}`;
-    var name = `${req.body.consultationInfo.fullName}`
-    var email = `${req.body.consultationInfo.email}`
-    var phone = `${req.body.consultationInfo.phone}`
-    var businessGoal = `${req.body.consultationInfo.businessGoal}`
+    var name = `${req.body.fullName}`
+    var email = `${req.body.email}`
+    var phone = `${req.body.phone}`
+    var dinnerChoice = `${req.body.dinnerChoice}`
+    var guestName = `${req.body.guest.guestFullName}`
+    var guestDinnerChoice = `${req.body.guest.guestDinnerChoice}`
     var text = "Hello world from me!";
     var mailOptions = {
         from: process.env.GMAIL_EMAIL, // sender address
-        to: process.env.GMAIL_EMAIL, // list of receivers
+        to: 'lairs@savethestorks.com', // list of receivers
         subject: `New Stork Ball Registration`, // Subject line
         // text: text, //, // plaintext body
-        html: `<b>Name:</b>${name}<br /><b>Email:</b> ${email}<br /><b>Phone: </b>${phone}<br /><b>Business Goals: </b>${businessGoal}` // You can choose to send an HTML body instead
+        html: `<b>Name:</b>${name}<br /><b>Email: </b> ${email}<br /><b>Phone: </b>${phone}<br /><b>Dinner Choice: </b><br /><b>Guest Name: </b>${guestName}<br /><b>Guest Dinner Choice: </b>${guestDinnerChoice} (If Guest Name is null, ignore dinner choice).` // You can choose to send an HTML body instead
       };
       transporter.sendMail(mailOptions, function(error, info){
         if(error){

@@ -52,6 +52,12 @@ class PodSeven extends Component {
 			const submittedForm = !submittedForm
 			this.setState({submittedForm})
 		})
+		.then((res) => {
+			axios.post(`/sayHello`, payload)
+			.then((res) => {
+				console.log("Thanks for registering!");
+			}).catch(err => console.log(err));
+		})
 	}
 	
     render() {
