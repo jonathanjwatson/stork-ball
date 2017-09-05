@@ -5,6 +5,24 @@ const User = require("../models/user");
 
 
 
+
+router.get("/csv", (req, res) => {
+  console.log("Hit the CSV route")
+  const migrateMongoDBTable = function(db, callback) {
+    const collection = db.collection('users');
+    collection.find({}).toArray(function(err, docs) {
+      assert.equal(err, null);
+      const json2csv = require('json2csv');
+      var fields = ['fullName', 'email', 'phone', 'dinnerChoice'];
+      var fieldNames = ['Full_Name', 'Email', 'Phone', 'DinnerChoice'];
+      var data = json2csv({ data: docs, fields: fields, fieldNames: fieldNames });
+      res.attachment('filename.csv');
+      res.status(200).send(data);
+      callback(docs)
+    })
+  }
+})
+
 router.get("/", (req, res) => {
   User.find().then((user) => {
     res.json(user);
