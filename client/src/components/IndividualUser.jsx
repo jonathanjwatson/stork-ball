@@ -17,7 +17,7 @@ class IndividualUser extends Component {
                 <p>Registered On: {this.props.registeredOn}</p>
             </div>
             <div className="notes">
-                <form >
+                <form onSubmit={(e) => this.props._handleSubmit(e, this.props.id, this.props.index)}>
                     <div>
                         <div className="label">
                             <label htmlFor="notes">User Notes</label>

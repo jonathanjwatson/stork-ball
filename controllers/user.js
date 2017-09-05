@@ -24,8 +24,12 @@ router.post("/create", (req, res) => {
 })
 
 router.put("/notes", (req, res) => {
-  userNoteInfo = req.body
-  User.findById
+  console.log("Hit the notes route")
+  console.log(req.body)
+  user = req.body
+  User.findByIdandUpdate(user._id).then((user) => {
+    res.json(user);
+  })
 })
 
 

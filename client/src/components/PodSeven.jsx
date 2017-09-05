@@ -8,14 +8,6 @@ class PodSeven extends Component {
         super();
         this.state = {
             user: {
-				fullName: '',
-				email: '',
-				phone: '',
-				dinnerChoice: 'Chicken',
-				guest: {
-					guestFullName: null,
-					guestDinnerChoice: 'Chicken'
-				}
 			},
 			addGuest: false,
 			submittedForm: false
