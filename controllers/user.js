@@ -27,7 +27,14 @@ router.put("/notes", (req, res) => {
   console.log("Hit the notes route")
   console.log(req.body)
   user = req.body
-  User.findByIdandUpdate(user._id).then((user) => {
+  User.findById(req.body._id)
+  .then((user) => {
+    console.log(user)
+    user.notes = req.body.notes;
+    console.log(user.notes);
+    return user.save()
+  }).then((user) => {
+    console.log("Second Then statement")
     res.json(user);
   })
 })

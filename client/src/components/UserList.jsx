@@ -40,8 +40,7 @@ class UserList extends Component {
 		axios.put(`/api/user/notes`, payload)
 		.then((res) => {
 			console.log("success")
-			const submittedForm = !submittedForm
-			this.setState({submittedForm})
+			this._getUserData();
 		})
 	}
     render() {
