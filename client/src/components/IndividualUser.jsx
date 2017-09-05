@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import IndividualGuest from './IndividualGuest';
 
 class IndividualUser extends Component {
+
     
     render() {
-        console.log(this.props);
+        // console.log(this.props);
         return (
             <div className="individualUser">
             <div className="attendee">
@@ -16,12 +17,28 @@ class IndividualUser extends Component {
                 <p>Registered On: {this.props.registeredOn}</p>
             </div>
             <div className="notes">
-                <div>
-                <textarea class="input" rows="10" cols="100">Some text here</textarea>
-            </div>
-            <div >
-            <button>Save</button>
-            </div>
+                <form >
+                    <div>
+                        <div className="label">
+                            <label htmlFor="notes">User Notes</label>
+                        </div>
+                        <div>
+                        <textarea
+                            className="input" 
+                            rows="10" 
+                            cols="100"
+                            onChange={(e) => this.props._handleChange(e, this.props.index)}
+                            value={this.props.notes}
+                            name="notes"
+                            placeholder="Notes"
+                        >
+                        </textarea>
+                        </div>
+                    </div>
+                    <div >
+                        <button>Save</button>
+                    </div>
+                </form>
             </div>
             </div>
         );

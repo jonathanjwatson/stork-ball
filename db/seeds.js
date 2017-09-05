@@ -15,6 +15,7 @@ const userOne = new User({
     phone: "757-447-7332",
     dinnerChoice: "Beef",
     registeredOn: '',
+    notes: '',
     guest: {
         guestFullName: null,
         guestDinnerChoice: "Chicken"

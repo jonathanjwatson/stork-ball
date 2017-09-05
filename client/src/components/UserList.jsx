@@ -7,11 +7,6 @@ class UserList extends Component {
         super();
         this.state = {
             users: [
-                {user: {
-                    guest: {
-                        
-                    }
-                }}
             ]
         }
     }
@@ -24,14 +19,37 @@ class UserList extends Component {
             this.setState({users: res.data})
         })
     }
+    _handleChange = (e, index) => {
+        const attributeName = e.target.name;
+        const attributeValue = e.target.value;
+        const attributePosition = index;
+        console.log(attributePosition)
+        const user = {...this.state.users[attributePosition]};
+        console.log(user)
+        user[attributeName] = attributeValue;
+        this.setState({ user })
+    }
+	_handleSubmit = (e) => {
+		e.preventDefault();
+		console.log(this.state.user);
+		const payload = this.state.user;
+		axios.put(`/api/user/notes`, payload)
+		.then((res) => {
+			console.log("success")
+			const submittedForm = !submittedForm
+			this.setState({submittedForm})
+		})
+	}
     render() {
         const users = this.state.users;
-        console.log(users);
+        // console.log(users);
         const userComponent = users.map((user, i) => {
-            console.log(user);
+            // console.log(user);
             return <IndividualUser
             {...user}
+            _handleChange={this._handleChange}
             key={i}
+            index={i}
             />;
         })
         return (

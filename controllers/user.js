@@ -23,6 +23,11 @@ router.post("/create", (req, res) => {
     .catch(err => console.log(err));
 })
 
+router.put("/notes", (req, res) => {
+  userNoteInfo = req.body
+  User.findById
+})
+
 
 
 
