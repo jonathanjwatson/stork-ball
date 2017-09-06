@@ -68,7 +68,7 @@ class UserList extends Component {
                 guestDinnerChoice: user.guest.guestDinnerChoice,
                 userNotes: user.notes
             }
-            arrayOfUsers.push(user);
+            return arrayOfUsers.push(user);
         })
         return (
             <div>
