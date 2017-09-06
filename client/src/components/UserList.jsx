@@ -13,6 +13,7 @@ class UserList extends Component {
     }
     componentWillMount() {
         this._getUserData();
+        this._loadCSV();
     }
     _getUserData = () => {
         axios.get(`/api/user/`)
@@ -44,6 +45,22 @@ class UserList extends Component {
 			this._getUserData();
 		})
     }
+    _loadCSV = () => {
+        const arrayOfUsers = [];
+        const individualUserData = users.map((user, i) => {
+            user = {
+                userName: user.fullName,
+                userEmail: user.email,
+                userPhone: user.phone,
+                userDinnerChoice: user.dinnerChoice,
+                guestName: user.guest.guestFullName,
+                guestDinnerChoice: user.guest.guestDinnerChoice,
+                userNotes: user.notes
+            }
+            arrayOfUsers.push(user);
+        })
+        return arrayOfUsers
+    }
     render() {
         const users = this.state.users;
         // console.log(users);
@@ -57,20 +74,7 @@ class UserList extends Component {
             index={i}
             />;
         })
-        const arrayOfUsers = [];
-        const individualUserData = users.map((user, i) => {
-            let guest = user.guest
-            user = {
-                userName: user.fullName,
-                userEmail: user.email,
-                userPhone: user.phone,
-                userDinnerChoice: user.dinnerChoice,
-                guestName: guest.guestFullName,
-                guestDinnerChoice: guest.guestDinnerChoice,
-                userNotes: user.notes
-            }
-            arrayOfUsers.push(user);
-        })
+        
         return (
             <div>
               <div className="row">
