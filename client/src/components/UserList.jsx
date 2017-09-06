@@ -8,6 +8,11 @@ class UserList extends Component {
         super();
         this.state = {
             users: [
+                {user: {
+                    guest: {
+                        
+                    }
+                }}
             ]
         }
     }
