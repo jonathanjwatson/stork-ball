@@ -8,6 +8,9 @@ class PodSeven extends Component {
         super();
         this.state = {
             user: {
+				guest: {
+					
+				}
 			},
 			addGuest: false,
 			submittedForm: false
