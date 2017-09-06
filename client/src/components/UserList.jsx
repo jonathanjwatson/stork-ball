@@ -63,18 +63,18 @@ class UserList extends Component {
             />;
         })
         const arrayOfUsers = [];
-        // const individualUserData = users.map((user, i) => {
-        //     user = {
-        //         userName: user.fullName,
-        //         userEmail: user.email,
-        //         userPhone: user.phone,
-        //         userDinnerChoice: user.dinnerChoice,
-        //         guestName: user.guest.guestFullName,
-        //         guestDinnerChoice: user.guest.guestDinnerChoice,
-        //         userNotes: user.notes
-        //     }
-        //     return arrayOfUsers.push(user);
-        // })
+        const individualUserData = users.map((user, i) => {
+            user = {
+                userName: user.fullName,
+                userEmail: user.email,
+                userPhone: user.phone,
+                userDinnerChoice: user.dinnerChoice,
+                guestName: user.guest.guestFullName,
+                guestDinnerChoice: user.guest.guestDinnerChoice,
+                userNotes: user.notes
+            }
+            arrayOfUsers.push(user);
+        })
         return (
             <div>
               <div className="row">
