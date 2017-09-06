@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import IndividualUser from './IndividualUser';
+import {CSVLink} from 'react-csv';
 
 class UserList extends Component {
     constructor() {
@@ -56,12 +57,35 @@ class UserList extends Component {
             index={i}
             />;
         })
+        const arrayOfUsers = [];
+        const individualUserData = users.map((user, i) => {
+            user = {
+                userName: user.fullName,
+                userEmail: user.email,
+                userPhone: user.phone,
+                userDinnerChoice: user.dinnerChoice,
+                guestName: user.guest.guestFullName,
+                guestDinnerChoice: user.guest.guestDinnerChoice,
+                userNotes: user.notes
+            }
+            arrayOfUsers.push(user);
+        })
         return (
-            <div className="row">
+            <div>
+              <div className="row">
+              <CSVLink data={arrayOfUsers}
+              filename={"my-file.csv"}
+              className="btn btn-primary"
+              target="_blank">
+                Download me
+            </CSVLink>
+              </div>
+              <div className="row">
                 <h1>Registered Users</h1>
                 {userComponent}
+              </div>
             </div>
-        );
+        )
     }
 }
 
