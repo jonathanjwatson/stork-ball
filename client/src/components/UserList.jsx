@@ -43,7 +43,7 @@ class UserList extends Component {
 			console.log("success")
 			this._getUserData();
 		})
-	}
+    }
     render() {
         const users = this.state.users;
         // console.log(users);
@@ -64,8 +64,8 @@ class UserList extends Component {
                 userEmail: user.email,
                 userPhone: user.phone,
                 userDinnerChoice: user.dinnerChoice,
-                guestName: user.guest.guestFullName,
-                guestDinnerChoice: user.guest.guestDinnerChoice,
+                // guestName: user.guest.guestFullName,
+                // guestDinnerChoice: user.guest.guestDinnerChoice,
                 userNotes: user.notes
             }
             arrayOfUsers.push(user);
