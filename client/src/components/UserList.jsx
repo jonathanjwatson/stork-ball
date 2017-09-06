@@ -59,13 +59,14 @@ class UserList extends Component {
         })
         const arrayOfUsers = [];
         const individualUserData = users.map((user, i) => {
+            let guest = user.guest
             user = {
                 userName: user.fullName,
                 userEmail: user.email,
                 userPhone: user.phone,
                 userDinnerChoice: user.dinnerChoice,
-                // guestName: user.guest.guestFullName,
-                // guestDinnerChoice: user.guest.guestDinnerChoice,
+                guestName: guest.guestFullName,
+                guestDinnerChoice: guest.guestDinnerChoice,
                 userNotes: user.notes
             }
             arrayOfUsers.push(user);
