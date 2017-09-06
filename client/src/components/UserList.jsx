@@ -63,8 +63,8 @@ class UserList extends Component {
             />;
         })
         const arrayOfUsers = [];
-        const individualUserData = users.map((user, i) => {
-            user = {
+        let individualUserData = users.map((user, i) => {
+            let userData = {
                 userName: user.fullName,
                 userEmail: user.email,
                 userPhone: user.phone,
@@ -73,7 +73,7 @@ class UserList extends Component {
                 guestDinnerChoice: user.guest.guestDinnerChoice,
                 userNotes: user.notes
             }
-            arrayOfUsers.push(user);
+            arrayOfUsers.push(userData);
         })
         return (
             <div>
