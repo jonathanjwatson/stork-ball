@@ -25,15 +25,12 @@ class PodFive extends Component {
                         <img className="pod-five-splash-image-bio" src={martGreen} alt="Mart Green"/>
                 </div>
                 <div className="speaker-row">
-                        <img className="pod-five-splash-image-bio" src={jamesDobson} alt="James Dobson"/>
+                        <img className="pod-five-splash-image-bio" src={bruceWilkinson} alt="Bruce Wilkinson"/>
                         <img className="pod-five-splash-image-bio" src={benhamBrothers} alt="Benham Brothers"/>
                 </div>
                 <div className="speaker-row">
                         <img className="pod-five-splash-image-bio" src={joeBaker} alt="Joe Baker"/>
                         <img className="pod-five-splash-image-bio" src={shariRigby} alt="Shari Rigby"/>
-                </div>
-                <div className="speaker-row">
-                        <img className="pod-five-splash-image-bio" src={bruceWilkinson} alt="Bruce Wilkinson"/>
                 </div>
                 <img className="pod-five-splash-image-bottom" src={blueStorkCircle} alt="blue stork circle icon"/>
                 </div>
