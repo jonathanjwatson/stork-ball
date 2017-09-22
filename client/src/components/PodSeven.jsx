@@ -136,6 +136,7 @@ class PodSeven extends Component {
 										<label htmlFor="guestFullName">Guest Name</label>
 										<br />
 										<input 
+											required
 											type="text"
 											onChange={this._handleGuestChange}
 											value={this.state.user.guest.guestFullName}
