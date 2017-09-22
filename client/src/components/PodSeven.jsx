@@ -8,7 +8,9 @@ class PodSeven extends Component {
         super();
         this.state = {
             user: {
+				dinnerSelection: "chicken",
 				guest: {
+					
 					
 				}
 			},
@@ -47,12 +49,12 @@ class PodSeven extends Component {
 			const submittedForm = !submittedForm
 			this.setState({submittedForm})
 		})
-		.then((res) => {
-			axios.post(`/sayHello`, payload)
-			.then((res) => {
-				console.log("Thanks for registering!");
-			}).catch(err => console.log(err));
-		})
+		// .then((res) => {
+		// 	axios.post(`/sayHello`, payload)
+		// 	.then((res) => {
+		// 		console.log("Thanks for registering!");
+		// 	}).catch(err => console.log(err));
+		// })
 	}
 	
     render() {
@@ -77,7 +79,7 @@ class PodSeven extends Component {
 					
 						<div className="RSVP-One">
 							
-							<form action="">
+							<form>
 							<h4>TELL US ABOUT YOURSELF</h4>
 							<p>Required</p>
 							<br />
@@ -117,17 +119,18 @@ class PodSeven extends Component {
 								<label htmlFor="dinnerChoice">Dinner Preference</label>
 								<br />
 								<select 
+									required
 									name="dinnerChoice"
 									value={this.state.user.dinnerChoice}
 									onChange={this._handleChange}
-								>
+								>	<option selected disabled hidden value="">Please select option from list</option>
 									<option value="Chicken">Chicken</option>
 									<option value="Beef">Beef</option>
 									<option value="Vegetarian">Vegetarian</option>
 								</select>
 								<br />
 								<button className="RSVP-secondary-button" onClick={this._toggleGuest}>Bring A Date</button>
-								{ this.state.addGuest ? null : <div><button onClick={this._handleSubmit} className="RSVP-primary-button">Submit Your Information</button></div> }
+								{ this.state.addGuest ? null : <div><button onSubmit={this._handleSubmit} className="RSVP-primary-button">Submit Your Information</button></div> }
 								{ this.state.addGuest ? 
 								<div>
 									<h4>TELL US ABOUT YOUR GUEST</h4>
@@ -149,12 +152,12 @@ class PodSeven extends Component {
 											value={this.state.user.guest.guestDinnerChoice}
 											onChange={this._handleGuestChange}
 										>
-											<option value="Chicken">Chicken</option>
+											<option selected="selected" value="Chicken">Chicken</option>
 											<option value="Beef">Beef</option>
 											<option value="Vegetarian">Vegetarian</option>
 										</select>
 										<br />
-										<button className="RSVP-primary-button" onClick={this._handleSubmit}>Submit Both</button>
+										<button onClick={this._handleSubmit} className="RSVP-primary-button">Submit Both</button>
 								</div> : null}
 							</form>
 						</div>
