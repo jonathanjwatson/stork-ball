@@ -27,7 +27,7 @@ router.post('/', (req, res) => {
     var text = "Hello world from me!";
     var mailOptions = {
         from: process.env.GMAIL_EMAIL, // sender address
-        to: 'lairs@savethestorks.com, madison@savethestorks.com, morgan.melendez@savethestorks.com', // list of receivers
+        to: 'lairs@savethestorks.com, madison@savethestorks.com, morgan.melendez@savethestorks.com, jonathanwatson1@gmail.com', // list of receivers
         subject: `New Stork Ball Registration`, // Subject line
         // text: text, //, // plaintext body
         html: `<b>Name:</b>${name}<br /><b>Email: </b> ${email}<br /><b>Phone: </b>${phone}<br /><b>Dinner Choice: </b><br /><b>Guest Name: </b>${guestName}<br /><b>Guest Dinner Choice: </b>${guestDinnerChoice} (If Guest Name is null, ignore dinner choice).` // You can choose to send an HTML body instead
